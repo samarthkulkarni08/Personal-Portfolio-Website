@@ -1,11 +1,6 @@
 import React from 'react'
-import accapp from "../assets/accapp.jpg";
-import calci from "../assets/calci.png";
-import pp from "../assets/pp.jpg";
-import resort from "../assets/resort.jpg";
-import weather from "../assets/weather.png";
 
-const WorkItem = ({link,demo,code}) => {
+const WorkItem = ({link,title,demo,code}) => {
   return (
     <div
     style={{ backgroundImage: `url(${link})`}}
@@ -15,15 +10,15 @@ const WorkItem = ({link,demo,code}) => {
     {/* hover effects */}
     <div className="opacity-0 group-hover:opacity-100 ease-in duration-800">
       <spam className="text-2xl font-bold text-white tracking-wider">
-        React JS Application
+        {/* React JS Application */}{`${title}`}
       </spam>
       <div className="pt-8 text-center">
-        <a href='/'>
+        <a href={`${demo}`}>
           <button className="text-center font-bold text-gray-700 px-4 py-3 m-2 bg-white text-lg rounded-xl hover:bg-[#041525] hover:text-white">
             Demo
           </button>
         </a>
-        <a href='/'>
+        <a href={`${code}`}>
           <button className="text-center font-bold text-gray-700 px-4 py-3 m-2 bg-white text-lg rounded-xl hover:bg-[#041525] hover:text-white">
             Code
           </button>

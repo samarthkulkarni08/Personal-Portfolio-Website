@@ -19,11 +19,11 @@ const Work = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* item */}
-          <WorkItem link={weather} />
-          <WorkItem link={calci} />
-          <WorkItem link={accapp} />
-          <WorkItem link={resort} />
-          <WorkItem link={pp} />
+          <WorkItem link={weather} title={"Weather App using React "} demo={'https://samarthkulkarni08.github.io/React-Weather-App/'} code={'https://github.com/samarthkulkarni08/React-Weather-App'} />
+          <WorkItem link={calci} title={"Caculator App using React"} demo={'https://samarthkulkarni08.github.io/React-Calculator/'} code={'https://github.com/samarthkulkarni08/React-Calculator/tree/master'}/>
+          <WorkItem link={accapp} title={"Art Gallery's Auction App Design"} demo={'https://www.figma.com/proto/RB6TIecS0m5vBOicMu3CEW/Auction-App?page-id=0%3A1&node-id=2%3A6204&viewport=-697%2C546%2C0.2&scaling=scale-down&starting-point-node-id=1%3A6136&show-proto-sidebar=1'} code={'https://www.figma.com/file/RB6TIecS0m5vBOicMu3CEW/Auction-App?node-id=0%3A1&t=Q7DZe9gwBUKhEyKi-1'}/>
+          <WorkItem link={resort} title={"Beach Resort & Restaurant Website Design"} demo={'https://www.figma.com/proto/aE7R2tNRp7eZHYQnQeC6HF/Beach-Resort-%26-Restaurant?page-id=0%3A1&node-id=4%3A2&starting-point-node-id=4%3A2'} code={'https://www.figma.com/file/aE7R2tNRp7eZHYQnQeC6HF/Beach-Resort-%26-Restaurant?node-id=0%3A1&t=U9b9YGctpJMqEtc5-1'}/>
+          <WorkItem link={pp} title={"Personal Portfolio Website Design"} demo={'https://www.figma.com/proto/w5glJoIXtGieGD373QOQqe/My-Portfolio?page-id=0%3A1&node-id=235%3A132&viewport=-689%2C176%2C0.18&scaling=min-zoom&starting-point-node-id=235%3A132'} code={'https://www.figma.com/file/w5glJoIXtGieGD373QOQqe/My-Portfolio?node-id=0%3A1&t=OR9uz4QAYErYbmrv-1'}/>
         </div>
       </div>
     </div>
