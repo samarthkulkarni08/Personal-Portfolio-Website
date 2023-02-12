@@ -20,6 +20,10 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* item */}
           <WorkItem link={weather} />
+          <WorkItem link={calci} />
+          <WorkItem link={accapp} />
+          <WorkItem link={resort} />
+          <WorkItem link={pp} />
         </div>
       </div>
     </div>
