@@ -2,6 +2,11 @@ import React from "react";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 export const About = () => {
+
+  const openResume = () => {
+    window.open(`${process.env.PUBLIC_URL}/resume.pdf`, "_blank");
+  };
+
   return (
     <div name="about" className="w-full h-screen bg-[#041525] text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
@@ -18,7 +23,7 @@ export const About = () => {
             <p>Hi. I'm Samarth, nice to meet you. Please take a look around.</p>
           </div>
           <div>
-            <p>
+            <p className="text-[#8892b0]">
               I am a UI/UX Designer and FrontEnd Developer specializing in
               creating beautiful and effective digital experiences. My portfolio
               showcases my expertise in designing and developing user-centered
@@ -34,7 +39,10 @@ export const About = () => {
           </div>
         </div>
         <div className="my-8 mx-auto justify-center center">
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#4361ee] hover:text-[#fff] hover:border-[#4361ee]">
+          <button
+            onClick={openResume}
+            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#4361ee] hover:text-[#fff] hover:border-[#4361ee]"
+          >
             View Resume
             <BsFillPersonLinesFill className="ml-3" />
           </button>
